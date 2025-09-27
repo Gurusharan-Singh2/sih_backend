@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 async function initDB() {
-  const mongoUri = process.env.MONGO_URI || "mongodb://localhost:27017/smart_soc";
+  const mongoUri = process.env.MONGO_URI || "mongodb+srv://guru63920_db_user:B7LOAIE0UpAE0ypJ@sih.peord7g.mongodb.net/smart_soc";
   await mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
   console.log("✅ Connected to MongoDB");
 }
